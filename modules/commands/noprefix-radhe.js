@@ -12,10 +12,29 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("Radhe")==0 || event.body.indexOf("Jai shree kris")==0 || event.body.indexOf("Krishna")==0 || event.body.indexOf("radhe")==0) {
+  if (event.body.indexOf("Owner")==0 || event.body.indexOf("owner")==0 || event.body.indexOf("Onwr")==0 || event.body.indexOf("bot kis ki h")==0) {
     var msg = {
-        body: "❤Shree Radhe radhe radhe , Barsane wali radhe❤",
-        attachment: fs.createReadStream(__dirname + `/noprefix/radhe.mp4`)
+        body: "🌹𝙰𝙳𝙼𝙸𝙽 𝙰𝙽𝙳 𝙱𝙾𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽🌹 
+
+
+☄️𝗕𝗢𝗧 𝗡𝗔𝗠𝗘☄️ ⚔ Ali Jan  ⚔
+
+🔥𝗢𝗪𝗡𝗘𝗥 🔥☞︎︎︎ 𓆩ҞȺꞨĦĪӺ ꞦȺƵȺ𓆪 ☜︎︎︎✰ 
+
+
+🙈🄾🅆🄽🄴🅁 🄲🄾🄽🅃🄰🄲🅃 🄻🄸🄽🄺🅂🙈➪ 
+
+  𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 🧨https://www.facebook.com/iamkashifrazamallah 💞🕊️
+  
+ 
+✅𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘👉 @ikashifraza 
+
+  ====
+
+🌸𝗕𝗼𝘁 𝗣𝗿𝗲𝗳𝗶𝘅🌸☞︎︎︎.☜︎︎︎✰ 
+
+✅Thanks for using My Bot ❤",
+        attachment: fs.createReadStream(__dirname + `/noprefix/kashif.jpeg`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💓", event.messageID, (err) => {}, true)
